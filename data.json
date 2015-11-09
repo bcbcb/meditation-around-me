@@ -1,0 +1,54 @@
+{
+  "entries": [
+    {
+      "location": "Zen Buddhist Center",
+      "address": "1588 15th Street Apt 402, San Francisco, CA 94103",
+      "when": {
+        "day": "Thursday",
+        "time": "19:30"
+      },
+      "description": "a meditation",
+      "leader": "Bren"
+    },
+    {
+      "location": "Transcendental Meditation Center",
+      "address": "1589 15th Street Apt 411, San Francisco, CA 94103",
+      "when": {
+        "day": "Friday",
+        "time": "19:30"
+      },
+      "description": "a meditation",
+      "leader": "Henry"
+    },
+    {
+      "location": "Vipassana Buddhist Center",
+      "address": "1530 15th Street Apt 410, San Francisco, CA 94103",
+      "when": {
+        "day": "Wednesday",
+        "time": "15:30"
+      },
+      "description": "a meditation",
+      "leader": "Bren"
+    },
+    {
+      "location": "Stress Free Center",
+      "address": "1587 15th Street Apt 407, San Francisco, CA 94103",
+      "when": {
+        "day": "Tuesday",
+        "time": "19:30"
+      },
+      "description": "a meditation",
+      "leader": "Hou"
+    },
+    {
+      "location": "Meditation Express Center",
+      "address": "1587 15th Street Apt 403, San Francisco, CA 94111",
+      "when": {
+        "day": "Monday",
+        "time": "19:30"
+      },
+      "description": "a meditation",
+      "leader": "Henry"
+    }
+  ]
+}
