@@ -5,7 +5,7 @@ export default class Table extends React.Component{
   render(){
     return (
       <table>
-        {this.props.entries.map(entry => <Entry {...entry} />)}
+        {this.props.filteredEntries.map(entry => <Entry {...entry} />)}
       </table>
     )
   }
