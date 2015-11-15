@@ -1,11 +1,14 @@
 import React from "react";
+import Tab from "./Tab";
 
-export default class Tabs extends React.Component{
+const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "All"];
+
+export default class Tabs extends React.Component{  
+
   render(){
-    const days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday", "All"];
     return (
       <div>
-        {days.map(day => <span onClick={(day) => this.props.filterDay(day)}>{day} </span>)}
+        {days.map( (day,i) => <Tab day={day} key={i} filterDay={this.props.filterDay}/>)}
       </div>
     );
   }

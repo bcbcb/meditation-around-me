@@ -18,8 +18,12 @@
   "homepage": "https://github.com/bcbcb/meditation-around-me#readme",
   "dependencies": {
     "babel-core": "^5.x",
+    "i": "^0.3.3",
+    "json-loader": "^0.5.3",
+    "npm": "^3.4.0",
     "react": "^0.14.2",
-    "react-dom": "^0.14.2"
+    "react-dom": "^0.14.2",
+    "source-map-loader": "^0.1.5"
   },
   "devDependencies": {
     "babel-loader": "^5.3.3",

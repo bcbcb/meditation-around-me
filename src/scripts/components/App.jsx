@@ -14,7 +14,7 @@ export default class App extends React.Component{
   }
 
   filterDay(day){
-    let filtered = this.state.entries.filter(entry => entry.when.day === day);
+    let filtered = this.state.entries.filter( (entry) => entry.when.day === day);
     this.setState({
       "filteredEntries": filtered
     });

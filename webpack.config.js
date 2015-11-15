@@ -14,8 +14,14 @@ module.exports = {
         loader: 'babel-loader',
         query: {stage: 0},
         include: path.join(__dirname, 'src')
-    }
-    ]
+      }
+    ],
+    preLoaders: [
+          {
+            test: /\.js$/,
+            loader: "source-map-loader"
+          }
+        ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']
