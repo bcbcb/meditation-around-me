@@ -14,10 +14,16 @@ export default class App extends React.Component{
   }
 
   filterDay(day){
-    let filtered = this.state.entries.filter( (entry) => entry.when.day === day);
-    this.setState({
-      "filteredEntries": filtered
-    });
+    if(day === "All"){
+      this.setState({
+         "filteredEntries": this.state.entries
+       });
+    }else {
+      let filtered = this.state.entries.filter( (entry) => entry.when.day === day);
+      this.setState({
+        "filteredEntries": filtered
+      });
+    }
   }
 
   render(){
@@ -25,7 +31,8 @@ export default class App extends React.Component{
       <div>
         <Header />
         <Table filteredEntries={this.state.filteredEntries} />
-        <Tabs filterDay={this.filterDay.bind(this)} />
+        <Tabs filterDay={
+          this.filterDay.bind(this)} />
       </div>
     )
   }

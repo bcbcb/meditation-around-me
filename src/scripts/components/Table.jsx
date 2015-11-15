@@ -6,7 +6,7 @@ export default class Table extends React.Component{
     return (
       <table>
       	<tbody>
-        {this.props.filteredEntries.map(entry => <Entry {...entry} />)}
+        {this.props.filteredEntries.map((entry,i) => <Entry {...entry} key={i}/>)}
         </tbody>
       </table>
     )
